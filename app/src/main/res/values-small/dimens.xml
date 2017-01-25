@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. 320*426 -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tile_1.3">105dp</dimen><!-- 3 DOZO -->
+    <dimen name="tile_4.5">83dp</dimen><!-- 4 DOZO -->
+    <dimen name="tile_6">78dp</dimen><!-- 4 DOZO -->
+    <dimen name="tile_7.8">62dp</dimen><!-- 5 DOZO -->
+    <dimen name="tile_9.10">51dp</dimen><!-- 6 DOZO -->
+    <dimen name="fragment_5">62dp</dimen><!-- 5 DOZO -->
+    <dimen name="fragment_5_shadow">62dp</dimen><!-- 5 DOZO -->
+    <dimen name="pixelConvert">1dp</dimen>
+</resources>

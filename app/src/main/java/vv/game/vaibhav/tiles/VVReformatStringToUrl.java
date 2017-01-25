@@ -1,0 +1,26 @@
+package vv.game.vaibhav.tiles;
+
+/**
+ * Created by Vaibhav on 3/9/2016.
+ */
+public class VVReformatStringToUrl {
+
+    public String reformatString(String inputString){
+        String finalUrl = "";
+        String tempUrl = "";
+        char [] inputArray = inputString.toCharArray();
+
+        for(int i = 0; i < inputArray.length; i++){
+            if(inputArray[i] != ' '){
+                tempUrl = tempUrl+inputArray[i];
+            }
+            else{
+                tempUrl = tempUrl+"%20";
+            }
+        }
+
+        finalUrl = tempUrl;
+
+        return finalUrl;
+    }
+}

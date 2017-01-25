@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="vv.utility.vaibhav.handynotes.AccountActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Username : "
+            android:id="@+id/username"
+            android:textSize="18dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Name : "
+            android:id="@+id/yourRank"
+            android:textSize="18dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Email : "
+            android:id="@+id/email"
+            android:textSize="18dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Rank : "
+            android:id="@+id/rank"
+            android:textSize="18dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="6dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:id="@+id/logoutButton"
+            android:layout_below="@+id/restoreButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>

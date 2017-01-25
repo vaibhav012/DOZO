@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="vv.utility.vaibhav.handynotes.AccountActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/yourRank"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/userExistsLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leaderboard Scores are based on the score of Expert Mode of the game"
+            android:id="@+id/textView"
+            android:textSize="18dp"
+            android:gravity="left|center_vertical|center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Your Rank : "
+            android:id="@+id/yourRank"
+            android:textSize="18dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="6dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_below="@+id/yourRank"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                android:id="@+id/rank"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Rank"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Username"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <!-- Email label -->
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:textSize="18dp"
+                android:text="Score"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/leaderboardListView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/createUserLayout"
+        android:background="#fafafa"
+        android:visibility="gone">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameText"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:hint="Create Username" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:id="@+id/createUserButton"
+            android:layout_below="@+id/usernameText"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>
